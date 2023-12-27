@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Socio-Economic Profile Prediction</title>
+</head>
+
+<body>
+    {% block content%}
+    <h1>Socio-Economic Profile Prediction</h1>
+    <div class="table-container">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Employee Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Family Size</th>
+                        <th>Work Experience (In years)</th>
+                        <th>Civil Status</th>
+                        <th>Montly Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for employee in object_list %}
+                    <tr>
+                      <td>{{ employee.id }}</td>
+                      <td>{{ employee.name }}</td>
+                      <td>{{ employee.age }}</td>
+                      <td>{{ employee.gender }}</td>
+                      <td>{{ employee.civil_status }}</td>
+                      <td>{{ employee.relative_size }}</td>
+                      <td>{{ employee.work_experiences }}</td>
+                      <td>$ {{ employee.monthly_salary }}</td>
+                      <td>
+                        <a href="employee_list/{{ employee.id }}"><button class="btn-update">Edit</button></a>
+                        <a  href="employee_list/{{ employee.id }}/delete" ><button class="btn-delete">Delete</button></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+            </table>     
+        </div>
+        <a href="{% url 'employee-add' %}"><button class="add">Add New Employee</button></a>
+        <div>
+            {% include 'includes/pagination.html' %}
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

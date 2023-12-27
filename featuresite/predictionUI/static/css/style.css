@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0e7044;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #39723b;
+    color: white;
+  } 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+  }
+
+.form-container-add {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 40vh;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+.table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: auto;
+  margin: 30px;
+}
+
+
+.btn-update {
+  color: #ffffff;
+  font-size: smaller;
+  background-color: #4CAF50;
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  border-style: hidden;
+}
+
+.btn-update:hover {
+  color: #000000;
+  background-color: #8cff9b;
+}
+
+.btn-delete {
+  color: #ffffff;
+  font-size: smaller;
+  background-color: #ff0000;
+  padding: 5px;
+  width: 100px;
+  border-radius: 15px;
+  margin-top: 1vh;
+  border-style: hidden;
+}
+
+.btn-delete:hover {
+  color: #000000;
+  background-color: #ff6969;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin-right: 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  color: #007bff;
+  background-color: #fff;
+}
+
+.page-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Adjusted selectors to accommodate classes with spaces */
+.page-item.disabled {
+  /* Styles for disabled pagination item */
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+.page-item.active {
+  /* Styles for active pagination item */
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  /* z-index: 3; */
+}
+
+div.pagination-container {
+  margin-top: -24vh;
+}
+
+header {
+  background-color: #00ff8c;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #00ff8c;
+  color: #000000;
+  padding: 20px;
+  bottom: 0;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+main {
+  flex: 1;
+}
+
+.pred-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.text-score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}

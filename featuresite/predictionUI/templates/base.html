@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Socio-Economic Profile Prediction</title>
+</head>
+
+<body>
+    {% include 'includes/header.html' %}
+    
+    <main>
+        {% block content %}
+        <div class="homepage">
+          <h1>Socio-Economic Profile Prediction</h1>
+        </div>
+        {% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
+</body>
+
+</html>
